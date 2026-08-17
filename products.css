@@ -1,0 +1,443 @@
+body{
+font-family:Arial;
+background:#f4f4f4;
+padding:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo span{
+    font-size:24px;
+    font-weight:bold;
+}
+h1{
+  color:white;
+  margin-right: 20px;
+}
+
+header{
+display:flex;
+align-items: center;
+justify-content:space-between;
+margin-bottom:30px;
+padding: 15px 40px;
+background-color: #5695a3;
+}
+
+.header-center{
+  display:flex;
+  align-items: center;
+  gap: 15px;
+}
+
+input,select{
+padding:10px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,280px));
+justify-content: center;
+/* padding: 25px; */
+gap:20px;
+}
+
+.card{
+background:#5695a3;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit: cover;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+button{
+padding:10px 20px;
+background:white;
+color:black;
+border:none;
+cursor:pointer;
+}
+
+#search{
+border:none;
+background:white;
+font-size:16px;
+cursor:pointer;
+width: 250px;
+height: 40px;
+padding: 0 12px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* Container Control */
+.filter-container {
+  background-color: #f8f9fa;
+  padding: 15px 40px;
+  border-bottom: 1px solid #e9ecef;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Hidden state utility class for JS */
+.hidden {
+  display: none !important;
+}
+
+/* Row Formats */
+.category-row, .sub-category-row, .filter-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-actions-row {
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.left-filters, .right-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Divider Line */
+.divider {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 15px 0;
+}
+
+/* Main Category Chips */
+.chip {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chip.active {
+  background-color: #0f172a; /* Dark blue/black accent from image */
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+/* Sub-category Pill Chips */
+.sub-chip {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+}
+
+/* Filter Dropdown Controls */
+.filter-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.filter-dropdown, .sort-dropdown {
+  background: #ffffff;
+  border: 1px solid #94a3b8;
+  border-radius: 20px; /* Fully rounded capsule buttons */
+  padding: 8px 18px;
+  font-size: 13px;
+  color: #1e293b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-dropdown.transparent {
+  background: transparent;
+  border-color: #cbd5e1;
+}
+
+
+/* Ensure the parent container doesn't restrict them */
+#customization-bar {
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+/* Force items onto a single horizontal line */
+.category-row, .sub-category-row {
+  display: flex !important;       /* Forces horizontal row layout */
+  flex-direction: row !important; /* Explicitly sets horizontal alignment */
+  flex-wrap: nowrap;              /* Stops buttons from breaking into a second line */
+  gap: 12px;                      /* Creates clean spacing between each option */
+  margin-bottom: 15px;
+  overflow-x: auto;               /* Allows swiping/scrolling horizontally if screen is small */
+  width: 100%;
+}
+
+/* Base styling to make buttons look like clean chips */
+.chip, .sub-chip {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;            /* Keeps text like 'Living Room' on one line */
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #f8fafc;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+/* Styling for sub-category chips (Sofas, Ottomans etc.) */
+.sub-chip {
+  background-color: #f1f5f9;
+  border-color: transparent;
+  font-size: 13px;
+}
+
+/* Active Highlight Style */
+.chip.active {
+  background-color: #0f172a !important; /* Dark theme color matching your reference */
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+}
+
+/* Clean up filter actions alignment */
+.filter-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.filter-dropdown {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #94a3b8;
+  background: white;
+  cursor: pointer;
+}
+
+.product-buttons{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:10px;
+    align-items: center;
+}
+
+.wishlist-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+    font-size:18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.wishlist-btn:hover{
+    background:#ffebee;
+    color:red;
+}
+
+.wishlist-btn.active{
+    background:#ffebee;
+    color:red;
+}
+
+.wishlist-btn.active i{
+    color:red;
+    font-weight:bold;
+}
+
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-left: auto;
+}
+
+.nav-icons a{
+    color:white;
+    font-size:24px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-icons a:hover{
+    color:gold;
+}
+
+.cart-wrapper{
+
+    position:relative;
+    display:inline-block;
+
+}
+
+#cartBadge{
+
+    position:absolute;
+    top:-8px;
+    right:-10px;
+
+    background:#ff3b30;
+    color:#fff;
+
+    min-width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:12px;
+    font-weight:bold;
+
+    display:none;
+
+}
+
+#wishlistIcon{
+
+    color:#444;
+    transition:.3s;
+
+}
+
+#wishlistIcon.active{
+
+    color:#ff1744;
+
+}
+
+#main-category-select{
+  width:100px;
+  height: 40px;
+}
+
+
+
+
+/* .rating{
+    margin-top:12px;
+    font-size:18px;
+    color:#FFD700;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.rating span{
+    color:#fff;
+    font-size:14px;
+    margin-left:5px;
+}
+
+.rating:hover{
+    transform:scale(1.08);
+} */
+
+
+
+
+
+
+
+
+
+
+/* 1. Make the container relative so the badge stays pinned to the image */
+.img-container {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* Ensure the image behaves normally within the wrapper */
+.img-container img {
+  width: 100%;
+  display: block;
+}
+
+/* 2. Style and position the rating badge (Bottom-Right Corner) */
+.rating-badge {
+  position: absolute;
+  bottom: 10px;               /* Distance from bottom edge of image */
+  right: 10px;                /* Change to left: 10px; for bottom-left corner */
+  
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;      /* Removes link underline */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 5;                 /* Keeps it on top of the image */
+  transition: transform 0.2s ease;
+}
+
+/* Subtle feedback when hovered */
+.rating-badge:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
+}
+
+.product-image{
+    cursor:pointer;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.product-image:hover{
+    transform:scale(1.04);
+    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
+
+.product-image.clicked{
+    transform:scale(0.94);
+}

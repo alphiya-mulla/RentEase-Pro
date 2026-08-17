@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products - RentEase Pro</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</head>
+<body>
+
+<header>
+<!-- 
+    <div class="logo"> -->
+        <!-- <img src="images/logo.jpeg" alt="RentEase Logo"> -->
+         <h1>RentEase Pro</h1>
+    
+
+    <div class="header-center">
+
+    <input type="text"
+           id="search"
+           placeholder="Search Products">
+
+    <select id="main-category-select">
+        <option value="all">All</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Appliance">Appliance</option>
+    </select>
+    </div>
+
+    <div class="nav-icons">
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="wishlist.html" id="wishlistIcon">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+         
+        <div class="cart-wrapper">
+        <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartBadge">0</span>
+        </a>
+
+    </div>
+
+</header>
+
+<div id="customization-bar">
+  <!-- Row 1: Primary Categories -->
+  <div class="category-row">
+    <button class="chip room-chip active" id="all-room" data-room="All">All </button>
+    <button class="chip room-chip" data-room="Living Room">Living Room</button>
+    <button class="chip room-chip" data-room="Bedroom">Bedroom</button>
+    <button class="chip room-chip" data-room="Kitchen">Kitchen</button>
+    <!-- <button class="chip room-chip" data-room="Bathroom">Bathroom</button> -->
+    <!-- Add other chips as needed... -->
+  </div>
+
+  <!-- Row 2: Sub-categories -->
+  <div class="sub-category-row">
+    <button class="sub-chip">Sofas</button>
+    <button class="sub-chip">Ottomans</button>
+    <button class="sub-chip">Recliner</button>
+  </div>
+  
+  <hr class="divider">
+  
+  <!-- Row 3: Filters -->
+  <div class="filter-actions-row">
+    <div class="left-filters">
+      <span class="filter-label">FILTERS</span>
+      <select id="price-filter">
+        <option value="all">Price Range</option>
+        <option value="0-499">0 - 499</option>
+        <option value="500-799">500/- - 799/-</option>
+        <option value="800-999">800/- - 999/-</option>
+        <option value="999 above">999/- above</option>
+        </select>
+    </div>
+  </div>
+</div>
+
+<div class="products" id="products">
+
+<div class="card Furniture" data-category="Living Room" data-name="Sofa Set" data-price="999" data-buyprice="32999"
+ data-image1="images/sofa.webp" 
+ data-image2="images/sub-sofa1.jpg" 
+ data-image3="images/sub-sofa2.jpg" 
+ data-image4="images/sub-sofa3.webp">
+    <div class="img-container">
+    <img src="images/sub-sofa.webp" class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Sofa Set</h3>
+    <p>₹32,999</p>
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Kitchen" data-name="Refrigerator" data-price="799" data-buyprice="24999"
+data-image1="images/Refregerator.jpg" 
+ data-image2="images/refregerator2.jpg" 
+ data-image3="images/refregerator3.jpg"
+ data-image4="images/refregerator4.jpg">
+    <div class="img-container">
+    <img src="images/refregerator1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Refrigerator</h3>
+    <p>₹24,999</p>
+    
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+   
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-name="Washing Machine" data-price="699" data-buyprice="18999"
+data-image1="images/Washing_Machine.jpg" 
+ data-image2="images/washing_machine2.jpg" 
+ data-image3="images/washing_machine3.jpg"
+ data-image4="images/washing_machine4.jpg">
+
+    <div class="img-container">
+    <img src="images/washing_machine1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Washing Machine</h3>
+    <p>₹18,999</p>
+
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Kitchen" data-name="Dining Table" data-price="899" data-buyprice="19999"
+data-image1="images/Dining Table.jpg" 
+ data-image2="images/dinningtable2.jpg" 
+ data-image3="images/dinningtable3.jpg"
+ data-image4="images/dinningtable4.jpg">
+    <div class="img-container">
+    <img src=" images/dinningtable1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Dining Table</h3>
+    <p>₹19,999</p>
+    
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Living Room" data-name="Wardrobe" data-price="699" data-buyprice="16999"
+data-image1="images/Wardrobe.jpg" 
+ data-image2="images/wardrobe2.jpg" 
+ data-image3="images/wardrobe3.jpg"
+ data-image4="images/wardrobe4.jpg">
+    <div class="img-container">
+    <img src="images/wardrobe1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Wardrobe</h3>
+    <p>₹16,999</p>
+   
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Kitchen" data-name="Air Fryer" data-price="599" data-buyprice="5999"
+data-image1="images/Air Fryer.jpg" 
+ data-image2="images/airfryer2.jpg" 
+ data-image3="images/airfryer3.jpg"
+ data-image4="images/airfryer4.jpg">
+    <div class="img-container">
+    <img src="images/airfryer1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Air Fryer</h3>
+    <p>₹5,999</p>
+   
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+   
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Living Room"  data-name="TV Unit" data-price="999" data-buyprice="14999"
+data-image1="images/TV Unit.jpg" 
+ data-image2="images/tvunit2.jpg" 
+ data-image3="images/tvunit3.jpg"
+ data-image4="images/tvunit4.jpg">
+    <div class="img-container">
+    <img src="images/tvunit1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>TV Unit</h3>
+    <p>₹4,999</p>
+   
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Living Room" data-name="Mattress" data-price="799" data-buyprice="12999"
+data-image1="images/Mattress.jpg" 
+ data-image2="images/mattress2.jpg" 
+ data-image3="images/mattress3.jpg"
+ data-image4="images/mattress4.jpg">
+    <div class="img-container">
+    <img src="images/mattress1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Mattress</h3>
+    <p>₹12,999</p>
+    
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Living Room" data-name="Ceiling Fan" data-price="499" data-buyprice="3499"
+data-image1="images/Ceiling Fan.jpg" 
+ data-image2="images/ceilingfan2.jpg" 
+ data-image3="images/ceilingfan3.jpg"
+ data-image4="images/ceilingfan4.jpg">
+    <div class="img-container">
+    <img src="images/ceilingfan1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Ceiling Fan</h3>
+    <p>₹3,499</p>
+   
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Bedroom" data-name="Bed" data-price="899" data-buyprice="22999"
+data-image1="images/Bed.jpg" 
+ data-image2="images/sub-bed2.jpg" 
+ data-image3="images/sub-bed3.jpg"
+ data-image4="images/sub-bed4.jpg">
+    <div class="img-container">
+    <img src="images/sub-bed1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Bed</h3>
+    <p>₹22,999</p>
+   
+
+   <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Living Room" data-name="Air Conditioner" data-price="799" data-buyprice="39999"
+data-image1="images/Air conditioner.jpg" 
+ data-image2="images/sub-air conditioner2.jpg" 
+ data-image3="images/sub-air conditioner3.webp"
+ data-image4="images/sub-air conditioner4.jpg">
+    <div class="img-container">
+    <img src="images/sub-air conditioner1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Air Conditioner</h3>
+    <p>₹39,999</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Living Room" data-name="Recliner chair" data-price="499" data-buyprice="17999">
+    <div class="img-container"
+    data-image1="images/recliner chair.webp" 
+    data-image2="images/reclinerchair2.jpg" 
+    data-image3="images/reclinerchair3.webp"
+    data-image4="images/reclinerchair4.jpg">
+    <img src="images/reclinerchair1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Recliner chair</h3>
+    <p>₹17,999</p>
+   
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Kitchen" data-name="Dining Chair" data-price="399" data-buyprice="3999"
+data-image1="images/dining chair.jpg" 
+ data-image2="images/diningchair2.jpg" 
+ data-image3="images/diningchair3.jpg"
+ data-image4="images/diningchair4.jpg">
+    <div class="img-container">
+    <img src="images/diningchair1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Dining Chair</h3>
+    <p>₹3,999</p>
+   
+
+   <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+   
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Living Room" data-name="Bookshelf" data-price="999" data-buyprice="8999"
+data-image1="images/bookshelf.webp" 
+ data-image2="images/bookshelf2.jpg" 
+ data-image3="images/bookshelf3.jpg"
+ data-image4="images/bookshelf4.jpg">
+    <div class="img-container">
+    <img src="images/bookshelf1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Bookshelf</h3>
+    <p>₹8,999</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+ 
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Bedroom" data-name="Dressing Table" data-price="699" data-buyprice="11999"
+data-image1="images/dressing table.webp" 
+ data-image2="images/dressingtable2.jpg" 
+ data-image3="images/dressingtable3.jpg"
+ data-image4="images/dressingtable4.jpg">
+    <div class="img-container">
+    <img src="images/dressingtable1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Dressing Table</h3>
+    <p>₹11,999</p>
+   
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Kitchen" data-name="Dish Washer" data-price="899" data-buyprice="34999"
+ data-image1="images/dishwasher.jpg" 
+ data-image2="images/dishwasher2.jpg" 
+ data-image3="images/dishwasher3.jpg"
+ data-image4="images/dishwasher4.jpg">
+    <div class="img-container">
+    <img src="images/dishwasher1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Dish Washer</h3>
+    <p>₹34,999</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture"data-category="Living Room"  data-name="Bean Bag" data-price="299" data-buyprice="2999"
+data-image1="images/bean bag.jpg" 
+ data-image2="images/beanbag2.jpg" 
+ data-image3="images/beanbag3.jpg"
+ data-image4="images/beanbag4.jpg">
+    <div class="img-container">
+    <img src="images/beanbag1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Bean Bag</h3>
+    <p>₹2,999</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Furniture" data-category="Living Room" data-name="Wooden Desk" data-price="399" data-buyprice="9999"
+data-image1="images/wooden desk.jpg" 
+ data-image2="images/woodendesk2.jpg" 
+ data-image3="images/woodendesk3.jpg"
+ data-image4="images/woodendesk4.jpg">
+    <div class="img-container">
+    <img src="images/woodendesk1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Wooden Desk</h3>
+    <p>₹9,999</p>
+    
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+   
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Kitchen" data-name="Microwave Oven" data-price="999" data-buyprice="9499"
+data-image1="images/microwave oven.jpg" 
+ data-image2="images/microwave2.jpg" 
+ data-image3="images/microwave3.jpg"
+ data-image4="images/microwave4.jpg">
+    <div class="img-container">
+    <img src="images/microwave1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Microwave Oven</h3>
+    <p>₹9,499</p>
+   
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Kitchen" data-name="Water Purifier" data-price="699" data-buyprice="12999"
+data-image1="images/water purifier.jpg" 
+ data-image2="images/purifier2.jpg" 
+ data-image3="images/purifier3.jpg"
+ data-image4="images/purifier4.jpg">
+    <div class="img-container">
+    <img src="images/purifier1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Water Purifier</h3>
+    <p>₹12,999</p>
+   
+
+   <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance"data-category="Living Room"  data-name="Air Cooler" data-price="499" data-buyprice="11999"
+data-image1="images/air cooler.jpg" 
+ data-image2="images/sub-air cooler2.jpg" 
+ data-image3="images/sub-air cooler3.jpg"
+ data-image4="images/sub-air cooler4.jpg">
+    <div class="img-container">
+    <img src="images/sub-air cooler1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Air Cooler</h3>
+    <p>₹11,999</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+   
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance"  data-category="Living Room" data-name="Vaccume Cleaner" data-price="399" data-buyprice="8999"
+ data-image1="images/vaccume cleaner.jpg" 
+ data-image2="images/vaccumecleaner2.jpg" 
+ data-image3="images/vaccumecleaner3.jpg"
+ data-image4="images/vaccumecleaner4.jpg">
+    <div class="img-container">
+    <img src="images/vaccumecleaner1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Vaccume Cleaner</h3>
+    <p>₹8,999</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Living Room" data-name="Chimney" data-price="899" data-buyprice="16999"
+data-image1="images/chimney.jpg" 
+ data-image2="images/chimney2.jpg" 
+ data-image3="images/chimney3.jpg"
+ data-image4="images/chimney4.jpg">
+    <div class="img-container">
+    <img src="images/chimney1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Chimney</h3>
+    <p>₹16,999</p>
+   
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+        <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance" data-category="Kitchen" data-name="Toaster" data-price="299" data-buyprice="2499"
+data-image1="images/toaster.jpg" 
+ data-image2="images/toaster2.jpg" 
+ data-image3="images/toaster3.jpg"
+ data-image4="images/toaster4.jpg">
+    <div class="img-container">
+    <img src="images/toaster1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Toaster</h3>
+    <p>₹2,499</p>
+    
+
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+</div>
+
+<div class="card Appliance"data-category="Living Room"  data-name="Coffee Table" data-price="699" data-buyprice="6999"
+data-image1="images/coffee table.webp" 
+ data-image2="images/coffee_table2.jpg" 
+ data-image3="images/coffee_table3.jpg"
+ data-image4="images/coffee_table4.jpg">
+    <div class="img-container">
+    <img src="images/coffee_table1.jpg"class="product-image">
+    <a href="reviews.html" class="rating-badge">&#9733 Rating</a>
+    </div>
+    <h3>Coffee Table</h3>
+    <p>₹6,999</p>
+    
+    
+    <div class="product-buttons">
+    <button class="cart-btn">Add To Cart</button>
+    <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>    
+</div>
+
+
+</div>
+<script src="common.js"></script>
+<script src="productData1.js"></script>
+<script src="products.js"></script>
+
+
+
+</body>
+</html>

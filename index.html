@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RentEase Pro</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+     <div class="logo">
+        <img src="images/logo.jpeg" alt="RentEase Logo">
+        <h1>RentEase Pro</h1>
+    </div>
+
+    <div class="left-menu">
+
+        <div class="menu-item">
+            <i class="fa-solid fa-circle-check"></i>
+                 <a href="buy-products.html?mode=buy" class="menu-link">Buy</a>
+        </div>
+
+        <div class="menu-item">
+            <i class="fa-solid fa-clock"></i>
+                <a href="products.html?mode=rent" class="menu-link">Rent</a>
+        </div>
+
+    </div>
+
+    <div class="search-box">
+
+        <input type="text" id="search" placeholder="What are you searching for?">
+
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+    </div>
+
+    <div class="nav-icons">
+    <a href="#" id="profileLink"><i class="fa-solid fa-user"></i></a>
+    <a href="wishlist.html" id="wishlistIcon"><i class="fa-solid fa-heart"></i></a>
+        <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartBadge" style="display:none;"></span>
+        </a> 
+        <div class="notification-wrapper">
+        <a href="notifications.html" class="notification-icon">
+    <i class="fa-solid fa-bell"></i>
+    <span id="notificationBadge">0</span>
+    </a>
+    </div>
+</div>
+</nav>
+
+<section class="hero">
+    <h1>Rent Furniture & Appliances Easily</h1>
+    <p>Affordable rentals for your home.</p><br/>
+    <a href="products.html"><button>Explore Products</button></a>
+</section>
+
+<section class="stats">
+
+    <div>
+        <h2 id="users">0</h2>
+        <p>Happy Customers</p>
+    </div>
+
+    <div>
+        <h2>500+</h2>
+        <p>Products</p>
+    </div>
+
+    <div>
+        <h2>50+</h2>
+        <p>Cities</p>
+    </div>
+
+</section>
+
+<section class="ad-banner">
+    <div class="ad-banner">
+    <div class="banner-slider" id="bannerSlider">
+
+        <div class="banner-slide">
+            <img src="images/ad banner.jpeg" alt="">
+        </div>
+
+        <div class="banner-slide">
+            <img src="images/ad banner1.jpeg" alt="">
+        </div>
+
+        <div class="banner-slide">
+            <img src="images/ad banner3.jpeg" alt="">
+        </div>
+
+        <div class="banner-slide">
+            <img src="images/ad banner4.jpeg" alt="">
+        </div>
+
+        <div class="banner-slide">
+            <img src="images/ad banner5.jpeg" alt="">
+        </div>
+
+    </div>
+</div>
+</section> 
+
+<footer class="footer">
+
+    <div class="footer-left">
+        <h1>RentEase Pro © 2026</h1>
+    </div>
+
+    <div class="footer-right">
+        <a href="about.html" class="footer-btn">About Us</a>
+        <a href="contact.html" class="footer-btn">Contact Us</a>
+    </div>
+
+</footer>
+<script src="common.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Reviews | RentEase Pro</title>
+
+    <link rel="stylesheet" href="reviews.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>
+            <i class="fa-solid fa-star"></i>
+            Product Reviews
+        </h1>
+
+        <a href="products.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Products
+        </a>
+
+    </header>
+
+    <!-- Product Name -->
+
+    <section class="product-title">
+
+        <h2 id="productName"></h2>
+
+    </section>
+
+    <!-- Review Form -->
+
+    <section class="review-form">
+
+        <h3>Write a Review</h3>
+
+        <input type="text"
+            id="reviewName"
+            placeholder="Enter your name"
+            required>
+
+        <select id="rating">
+
+            <option value="5">⭐⭐⭐⭐⭐ (5 Stars)</option>
+            <option value="4">⭐⭐⭐⭐ (4 Stars)</option>
+            <option value="3">⭐⭐⭐ (3 Stars)</option>
+            <option value="2">⭐⭐ (2 Stars)</option>
+            <option value="1">⭐ (1 Star)</option>
+
+        </select>
+
+        <textarea
+            id="reviewText"
+            placeholder="Write your review..."
+            rows="5"></textarea>
+
+        <button id="submitReview">
+
+            Submit Review
+
+        </button>
+
+    </section>
+
+    <!-- Customer Reviews -->
+
+    <section class="reviews">
+
+        <h3>Customer Reviews</h3>
+
+        <div id="reviewsContainer">
+
+            <!-- Reviews will appear here -->
+
+        </div>
+
+    </section>
+
+    <script src="reviews.js"></script>
+
+</body>
+
+</html>

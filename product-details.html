@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | RentEase Pro</title>
+
+    <link rel="stylesheet" href="product-details.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <div class="logo">
+            <h2>RentEase Pro</h2>
+        </div>
+
+        <div class="nav-icons">
+
+            <a href="products.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+
+            <a href="wishlist.html" id="wishlistIcon">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Product Details -->
+
+    <div class="product-container">
+
+        <!-- Left -->
+
+        <div class="product-image">
+
+    <img id="mainImage" src="" alt="Product">
+
+    <div class="thumbnail-container">
+
+        <img id="thumb1" class="thumbnail">
+        <img id="thumb2" class="thumbnail">
+        <img id="thumb3" class="thumbnail">
+        <img id="thumb4" class="thumbnail">
+
+    </div>
+   
+</div>
+
+
+        <!-- Right -->
+
+        <div class="product-info">
+
+           
+
+            <div class="rating">
+
+                <span id="productRating"></span>
+
+            </div>
+
+             <div class="image-description">
+             <h3>Image Description</h3>
+             <p id="imageDescription"></p>
+             </div>
+             <h1 id="productName"></h1>
+
+            <h2>
+
+                ₹<span id="productPrice"></span>
+
+                <small>/month</small>
+
+            </h2>
+
+            <p class="offer" id="productOffer"></p>
+
+
+            <p id="description"></p>
+
+            <h3>Rental Duration</h3>
+
+            <select id="duration">
+
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="12">12 Months</option>
+
+            </select>
+
+
+            <div class="buttons">
+
+                <button id="cartBtn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    Add To Cart
+
+                </button>
+
+                <button id="wishlistBtn">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Wishlist
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Specifications -->
+
+    <div class="specification">
+
+        <h2>Specifications</h2>
+        <ul id="specificationsList"></ul>
+
+
+    </div>
+
+
+    <!-- Features -->
+
+    <div class="features">
+
+        <h2>Why Rent From Us?</h2>
+
+        <ul>
+
+            <li>✅ Free Delivery</li>
+
+            <li>✅ Free Installation</li>
+
+            <li>✅ Easy Returns</li>
+
+            <li>✅ Quality Checked Products</li>
+
+            <li>✅ 24×7 Customer Support</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Reviews -->
+
+    <div class="reviews">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="review-card">
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+
+                Amazing quality and fast delivery.
+
+            </p>
+
+            <h4>- Rahul</h4>
+
+        </div>
+
+        <div class="review-card">
+
+            ⭐⭐⭐⭐☆
+
+            <p>
+
+                Product was clean and installation was quick.
+
+            </p>
+
+            <h4>- Priya</h4>
+
+        </div>
+
+    </div>
+
+    <script src="common.js"></script>
+    <script src="productData.js"></script>
+    <script src="product-details.js"></script>
+      
+
+</body>
+
+</html>

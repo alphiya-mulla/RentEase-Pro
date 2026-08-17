@@ -1,0 +1,157 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo span{
+    font-size:24px;
+    font-weight:bold;
+}
+/* Navbar */
+
+.navbar{
+    background:#5695a3;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar h2{
+    margin:0;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.nav-links a:hover{
+    color:#ffe082;
+}
+
+/* Wishlist Container */
+
+.wishlist-container{
+    width:90%;
+    margin:40px auto;
+}
+
+/* Grid */
+
+.wishlist-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Product Card */
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:180px;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0 10px;
+}
+
+.card p{
+    font-size:18px;
+    color:#444;
+}
+
+/* Buttons */
+
+.card button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.card button:first-of-type{
+    background:#5695a3;
+    color:white;
+}
+
+.card button:first-of-type:hover{
+    background:#467c88;
+}
+
+.card button:last-of-type{
+    background:#e53935;
+    color:white;
+}
+
+.card button:last-of-type:hover{
+    background:#c62828;
+}
+
+/* Empty Wishlist */
+
+#empty-message{
+    text-align:center;
+    margin-top:80px;
+}
+
+#empty-message h2{
+    color:#555;
+}
+
+#empty-message p{
+    color:#777;
+    margin-bottom:20px;
+}
+
+#empty-message button{
+    padding:12px 25px;
+    background:#5695a3;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#empty-message button:hover{
+    background:#467c88;
+}

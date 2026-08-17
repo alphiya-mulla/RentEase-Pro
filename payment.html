@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment | RentEase Pro</title>
+
+    <link rel="stylesheet" href="payment.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>RentEase Pro</h1>
+
+</header>
+
+<div class="payment-container">
+
+    <h2>Select Payment Method</h2>
+
+    <form id="paymentForm">
+
+        <!-- UPI -->
+        <div class="payment-option">
+
+            <label>
+
+                <input type="radio"
+                name="paymentMethod"
+                value="UPI"
+                checked>
+
+                <i class="fa-brands fa-google-pay"></i>
+
+                UPI
+
+            </label>
+
+            <div class="payment-fields" id="upiFields">
+
+                <input
+                type="text"
+                id="upiId"
+                placeholder="Enter your UPI ID">
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+        <div class="payment-option">
+
+            <label>
+
+                <input type="radio"
+                name="paymentMethod"
+                value="Card">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                Credit / Debit Card
+
+            </label>
+
+            <div class="payment-fields" id="cardFields">
+
+                <input
+                type="text"
+                id="cardName"
+                placeholder="Card Holder Name">
+
+                <input
+                type="text"
+                id="cardNumber"
+                maxlength="16"
+                placeholder="Card Number">
+
+                <input
+                type="text"
+                id="expiry"
+                placeholder="MM/YY">
+
+                <input
+                type="password"
+                id="cvv"
+                maxlength="3"
+                placeholder="CVV">
+
+            </div>
+
+        </div>
+
+        <!-- Net Banking -->
+        <div class="payment-option">
+
+            <label>
+
+                <input type="radio"
+                name="paymentMethod"
+                value="Net Banking">
+
+                <i class="fa-solid fa-building-columns"></i>
+
+                Net Banking
+
+            </label>
+
+            <div class="payment-fields" id="bankFields">
+
+                <select id="bankName">
+
+                    <option value="">Select Bank</option>
+
+                    <option>State Bank of India</option>
+
+                    <option>HDFC Bank</option>
+
+                    <option>ICICI Bank</option>
+
+                    <option>Axis Bank</option>
+
+                    <option>Bank of Baroda</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Wallet -->
+        <div class="payment-option">
+
+            <label>
+
+                <input type="radio"
+                name="paymentMethod"
+                value="Wallet">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                Wallet
+
+            </label>
+
+            <div class="payment-fields" id="walletFields">
+
+                <select id="walletName">
+
+                    <option value="">Select Wallet</option>
+
+                    <option>Paytm</option>
+
+                    <option>PhonePe</option>
+
+                    <option>Amazon Pay</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Cash on Delivery -->
+        <div class="payment-option">
+
+            <label>
+
+                <input type="radio"
+                name="paymentMethod" id="codOption"
+                value="Cash on Delivery">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                Cash on Delivery
+
+            </label>
+
+        </div>
+
+        <button type="submit" class="pay-btn">
+
+            Place Order
+
+        </button>
+
+    </form>
+
+</div>
+
+<script src="payment.js"></script>
+
+</body>
+
+</html>

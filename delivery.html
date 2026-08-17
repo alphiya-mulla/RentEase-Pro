@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Details | RentEase Pro</title>
+
+    <link rel="stylesheet" href="delivery.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <h1>RentEase Pro</h1>
+
+    <div class="nav-icons">
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="wishlist.html" id="wishlistIcon">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <div class="cart-wrapper">
+        <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartBadge">0</span>
+        </a>
+
+    </div>
+    </div>
+
+</header>
+
+<div class="delivery-container">
+
+    <h2>Delivery Details</h2>
+    <p>Please enter your delivery address.</p>
+
+    <div id="savedAddressBox" class="saved-address" style="display:none;">
+
+    <h2>Saved Delivery Address</h2>
+
+    <div id="savedAddress"></div>
+
+    <button type="button" id="deliverBtn">
+        Deliver Here
+    </button>
+
+    <button type="button" id="changeBtn">
+        Change Address
+    </button>
+
+</div>
+
+    <form id="deliveryForm">
+
+        <label>Full Name</label>
+        <input
+            type="text"
+            id="fullname"
+            placeholder="Enter your full name"
+            required>
+
+        <label>Mobile Number</label>
+        <input
+            type="tel"
+            id="mobile"
+            placeholder="Enter your mobile number"
+            maxlength="10"
+            required>
+
+        <label>House / Flat No.</label>
+        <input
+            type="text"
+            id="house"
+            placeholder="House No., Flat No."
+            required>
+
+        <label>Street / Area</label>
+        <input
+            type="text"
+            id="street"
+            placeholder="Street, Area"
+            required>
+
+        <label>Landmark</label>
+        <input
+            type="text"
+            id="landmark"
+            placeholder="Nearby Landmark">
+
+        <label>City</label>
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter your city"
+            required>
+
+        <label>State</label>
+        <input
+            type="text"
+            id="state"
+            placeholder="Enter your state"
+            required>
+
+        <label>PIN Code</label>
+        <input
+            type="text"
+            id="pincode"
+            placeholder="Enter PIN Code"
+            maxlength="6"
+            required>
+
+        <label>Delivery Instructions (Optional)</label>
+
+        <textarea
+            id="instruction"
+            rows="4"
+            placeholder="Any special delivery instructions..."></textarea>
+
+        <button type="submit">
+            Continue to Order
+        </button></a>
+
+    </form>
+
+</div>
+
+<script src="delivery.js"></script>
+
+</body>
+</html>

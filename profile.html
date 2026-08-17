@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | RentEase Pro</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <h2>RentEase Pro</h2>
+    </div>
+
+    <div class="nav-icons">
+
+        <a href="index.html" title="Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="wishlist.html" id="wishlistIcon">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <div class="cart-wrapper">
+        <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartBadge">0</span>
+        </a>
+
+    </div>
+
+        
+    </div>
+
+</header>
+
+<!-- Profile Card -->
+
+<div class="profile-container">
+
+    <div class="profile-header">
+
+        <div class="profile-icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <h2>Welcome!</h2>
+
+        <p>Your RentEase Pro Account</p>
+
+    </div>
+
+    <div class="profile-details">
+
+        <div class="detail-box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <h4>Full Name</h4>
+                <span id="profile-name"></span>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+                <h4>Email</h4>
+                <span id="profile-email"></span>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+                <h4>Mobile Number</h4>
+                <span id="profile-phone"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="profile-menu">
+
+        <a href="wishlist.html">
+            <i class="fa-solid fa-heart"></i>
+            Wishlist
+        </a>
+
+        <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            My Cart
+        </a>
+
+        <a href="history.html">
+            <i class="fa-solid fa-box"></i>
+            My Orders
+        </a>
+
+         <a href="history.html">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Order History
+        </a>
+
+        <a href="support.html">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Maintenance & Support
+        </a>
+
+        <a href="track.html">
+            <i class="fa-solid fa-truck-fast"></i>
+            Track Order
+        </a>
+
+        <a href="notifications.html">
+            <i class="fa-solid fa-bell"></i>
+            Notifications
+        </a>
+
+    </div>
+
+    <button id="logoutBtn">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+    </button>
+
+</div>
+
+<script src="common.js"></script>
+<script src="profile.js"></script>
+
+</body>
+</html>

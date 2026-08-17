@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Maintenance & Support</title>
+
+<link rel="stylesheet" href="support.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+Maintenance & Support
+
+</h1>
+
+<a href="history.html">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back
+
+</a>
+
+</header>
+
+<div class="container">
+
+<h2>Raise a Support Request</h2>
+
+<form id="supportForm">
+
+<label>Product</label>
+
+<input type="text" id="product" readonly>
+
+<label>Issue Type</label>
+
+<select id="issue" required>
+
+<option value="">Select Issue</option>
+
+<option>Not Working</option>
+
+<option>Damaged Product</option>
+
+<option>Cleaning Required</option>
+
+<option>Installation Issue</option>
+
+<option>Replacement Required</option>
+
+<option>Other</option>
+
+</select>
+
+<label>Describe your issue</label>
+
+<textarea
+id="description"
+rows="5"
+placeholder="Describe the issue..."
+required>
+</textarea>
+
+<button type="submit">
+
+Submit Request
+
+</button>
+
+</form>
+
+</div>
+
+<script src="support.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order History | RentEase Pro</title>
+
+    <link rel="stylesheet" href="history.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <a href="index.html">RentEase Pro</a>
+
+        </div>
+
+        <div class="nav-icons">
+
+            <a href="index.html" title="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+
+            <a href="products.html" title="Products">
+                <i class="fa-solid fa-store"></i>
+            </a>
+
+            <a href="wishlist.html" title="Wishlist">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+
+            <a href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <a href="profile.html" title="Profile">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Heading -->
+
+    <section class="history-header">
+
+        <h1>My Rental History</h1>
+
+        <p>View all your previous and active rental orders.</p>
+
+    </section>
+
+    <!-- Orders Container -->
+
+    <div id="historyContainer">
+
+        <!-- Orders will come from history.js -->
+
+    </div>
+
+    <!-- Empty State -->
+
+    <div id="emptyHistory" style="display:none;">
+
+        <i class="fa-solid fa-box-open"></i>
+
+        <h2>No Orders Yet</h2>
+
+        <p>You haven't placed any rental orders.</p>
+
+        <a href="products.html" class="shop-btn">
+
+            Browse Products
+
+        </a>
+
+    </div>
+
+    <script src="history.js"></script>
+
+    <!-- Extend Rental Modal -->
+
+<div id="extendModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Extend Rental</h2>
+
+        <p class="current-plan">
+            Choose an extension plan
+        </p>
+
+        <div class="plan-box">
+
+            <label>
+
+                <input type="radio"
+                name="extendPlan"
+                value="1"
+                checked>
+
+                <span>
+
+                    <b>+1 Month</b>
+
+                    <small>₹799</small>
+
+                </span>
+
+            </label>
+
+        </div>
+
+        <div class="plan-box">
+
+            <label>
+
+                <input type="radio"
+                name="extendPlan"
+                value="3">
+
+                <span>
+
+                    <b>+3 Months</b>
+
+                    <small>₹2397</small>
+
+                </span>
+
+            </label>
+
+        </div>
+
+        <div class="plan-box">
+
+            <label>
+
+                <input type="radio"
+                name="extendPlan"
+                value="6">
+
+                <span>
+
+                    <b>+6 Months</b>
+
+                    <small>₹4794</small>
+
+                </span>
+
+            </label>
+
+        </div>
+
+        <div class="modal-buttons">
+
+            <button class="cancel-modal"
+            onclick="closeModal()">
+
+                Cancel
+
+            </button>
+
+            <button class="confirm-modal"
+            onclick="confirmExtension()">
+
+                Pay & Extend
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
